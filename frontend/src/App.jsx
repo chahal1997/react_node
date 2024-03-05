@@ -21,14 +21,14 @@ function App() {
         jokes
       </p>
       {
-        jokes.map((joke)=>{
+        jokes.map((joke)=>(
           <div key={joke.id}>
             <h3>
               {joke.title}
             </h3>
             <p>{joke.content}</p>
           </div>
-        })
+        ))
       }
       </div>
 
