@@ -5,7 +5,7 @@ function App() {
   const [jokes,setJokes] = useState([]);
 
   useEffect(()=>{
-    axios.get('http://localhost:46000/jokes')
+    axios.get('/api/jokes')
     .then((response)=>{
       setJokes(response.data)
     }).catch((error)=>{
